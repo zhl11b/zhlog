@@ -24,7 +24,7 @@ type zlog struct {
 var logger zlog
 
 func init() {
-	log.SetFlags(log.Lshortfile | log.Ltime)
+	log.SetFlags(log.Lshortfile | log.Ldate | log.Ltime)
 }
 
 func (z *zlog) setLevel(lev LogLevel) error {
